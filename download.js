@@ -1,7 +1,6 @@
 //<li class="main-menu__item ng-scope"><button class="main-menu__control menu-list__control">Download Recording (CollabDown)</button></li>
 var t = setInterval(function () {
   if (document.getElementsByClassName("main-menu__list menu-list").length > 0) {
-	console.log("on load!");
 	var down = document.createElement('li');
 	down.className = 'main-menu__item ng-scope';
 	var downButton = document.createElement('button');
