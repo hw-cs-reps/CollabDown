@@ -1,0 +1,19 @@
+{
+  "description": "Allows downloading Bb Collaborate recordings by adding a Download Recording item in the side menu.",
+  "manifest_version": 2,
+  "name": "CollabDown",
+  "version": "1.0",
+  "homepage_url": "https://humaidq.ae/projects/collabdown",
+  "icons": {
+    "64": "logo.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.bbcollab.com/collab/ui/session/playback*"],
+	  "run_at": "document_idle",
+      "js": ["download.js"]
+    }
+  ]
+
+}
